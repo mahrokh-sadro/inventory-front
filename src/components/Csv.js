@@ -21,7 +21,7 @@ const Csv = () => {
         </a>
 
         <a
-          href="http://localhost:5000/products"
+          href="https://shopify-inventory-backend.herokuapp.com/products"
           class="btn btn-primary"
           type="submit"
         >
