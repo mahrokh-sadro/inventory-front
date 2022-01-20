@@ -4,7 +4,11 @@ const Csv = () => {
   return (
     <div>
       <div class="d-grid gap-2">
-        <a href="/by/category" class="btn btn-primary" type="submit">
+        <a
+          href="https://shopify-inventory-front.netlify.app/by/category"
+          class="btn btn-primary"
+          type="submit"
+        >
           Filter by Category
         </a>
 
