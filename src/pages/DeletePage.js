@@ -11,10 +11,10 @@ const DeletePage = () => {
       `https://shopify-inventory-backend.herokuapp.com/products/${formData.id}`,
       {
         method: "DELETE",
-        // headers: {
-        //   "Content-Type": "application/json",
-        // },
-        // body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       }
     )
       .then((response) => response.json())

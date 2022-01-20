@@ -27,7 +27,9 @@ const UpdatePage = () => {
   const showProductInfo = (evt) => {
     evt.preventDefault();
 
-    fetch(`http://localhost:5000/products/${product.id}`)
+    fetch(
+      `https://shopify-inventory-backend.herokuapp.com/products/${product.id}`
+    )
       .then((response) => response.json())
       .then((json) => {
         // console.log("id:" + product.id);
@@ -41,7 +43,9 @@ const UpdatePage = () => {
         console.log(`Error ${err}`);
       });
 
-    fetch(`http://localhost:5000/products/${product.id}`)
+    fetch(
+      `https://shopify-inventory-backend.herokuapp.com/products/${product.id}`
+    )
       .then((response) => response.json())
       .then((json) => {
         // console.log("id:" + product.id);
@@ -131,7 +135,7 @@ const UpdatePage = () => {
             }}
           />
         </div>
-        <div className="form-control">
+        {/* <div className="form-control">
           <label htmlFor="price">price</label>
           <input
             type="number"
@@ -141,7 +145,7 @@ const UpdatePage = () => {
               setFormData({ price: evt.target.value });
             }}
           />
-        </div>
+        </div> */}
         <div className="form-control">
           <button className="btn" type="submit">
             Update Item
