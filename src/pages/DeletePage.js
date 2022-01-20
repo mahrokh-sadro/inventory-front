@@ -21,7 +21,7 @@ const DeletePage = () => {
       .then((json) => {
         alert(json.message);
         setFormData({
-          firstName: "",
+          id: "",
         });
       })
       .catch((err) => {
@@ -43,7 +43,7 @@ const DeletePage = () => {
               <input
                 type="text"
                 id="id"
-                value={formData.firstName}
+                value={formData.id}
                 onChange={(evt) => {
                   setFormData({ ...formData, id: evt.target.value });
                 }}
