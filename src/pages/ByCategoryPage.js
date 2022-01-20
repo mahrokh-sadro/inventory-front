@@ -6,7 +6,6 @@ const ByCategoryPage = () => {
   });
 
   const [products, setProducts] = useState([]);
-  const [loaded, setLoaded] = useState(false);
 
   const onCreateAccount = (evt) => {
     evt.preventDefault();
@@ -17,7 +16,6 @@ const ByCategoryPage = () => {
       .then((response) => response.json())
       .then((json) => {
         setProducts(json.data);
-        setLoaded(true);
 
         setFormData({
           cat: "",
