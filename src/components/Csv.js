@@ -9,17 +9,17 @@ const Csv = () => {
           Filter by Category
         </Link>
 
-        <a href="/create" class="btn btn-primary" type="submit">
+        <Link to="/create" class="btn btn-primary" type="submit">
           Create an Item
-        </a>
+        </Link>
 
-        <a href="/update" class="btn btn-primary" type="submit">
+        <Link to="/update" class="btn btn-primary" type="submit">
           Edit the quantity of an Item
-        </a>
+        </Link>
 
-        <a href="/delete" class="btn btn-primary" type="submit">
+        <Link to="/delete" class="btn btn-primary" type="submit">
           Delete an Item
-        </a>
+        </Link>
 
         <a
           href="https://shopify-inventory-backend.herokuapp.com/products"
