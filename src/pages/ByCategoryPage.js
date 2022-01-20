@@ -10,8 +10,7 @@ const ByCategoryPage = () => {
   const onCreateAccount = (evt) => {
     evt.preventDefault();
     fetch(
-      `https://shopify-inventory-backend.herokuapp.com/products/by/${formData.cat}`,
-      {}
+      `https://shopify-inventory-backend.herokuapp.com/products/by/${formData.cat}`
     )
       .then((response) => response.json())
       .then((json) => {
