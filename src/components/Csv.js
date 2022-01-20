@@ -1,16 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Csv = () => {
   return (
     <div>
       <div class="d-grid gap-2">
-        <a
-          href="https://shopify-inventory-front.netlify.app/by/category"
-          class="btn btn-primary"
-          type="submit"
-        >
+        <Link to="/by/category" class="btn btn-primary" type="submit">
           Filter by Category
-        </a>
+        </Link>
 
         <a href="/create" class="btn btn-primary" type="submit">
           Create an Item
