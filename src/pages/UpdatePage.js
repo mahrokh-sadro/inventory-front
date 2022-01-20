@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 const UpdatePage = () => {
   const [formData, setFormData] = useState({
-    // id: "",
-    // name: "",
+    id: "",
+    name: "",
   });
 
   const [product, setProduct] = useState({
@@ -79,12 +79,22 @@ const UpdatePage = () => {
 
             <div className="form-control">
               <label htmlFor="name">new name</label>
+              {/* <input
+                type="text"
+                id="name"
+                value={formData.name}
+                onChange={(evt) => {
+                  setProduct({ ...formData, name: evt.target.value });
+                }}
+              /> */}
+
               <input
                 type="text"
                 id="name"
                 value={formData.name}
                 onChange={(evt) => {
                   setProduct({ ...formData, name: evt.target.value });
+                  setFormData({ ...formData, name: evt.target.value });
                 }}
               />
             </div>
