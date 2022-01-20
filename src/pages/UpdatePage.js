@@ -47,9 +47,9 @@ const UpdatePage = () => {
       .then((response) => response.json())
       .then((json) => {
         alert(json.message);
-        setFormData({
-          name: "",
-        });
+        // setFormData({
+        //   name: "",
+        // });
       })
       .catch((err) => {
         console.log(`Error ${err}`);
