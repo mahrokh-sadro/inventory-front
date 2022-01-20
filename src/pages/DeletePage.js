@@ -7,13 +7,16 @@ const DeletePage = () => {
 
   const onCreateAccount = (evt) => {
     evt.preventDefault();
-    fetch(`http://localhost:5000/products/${formData.id}`, {
-      method: "DELETE",
-      // headers: {
-      //   "Content-Type": "application/json",
-      // },
-      // body: JSON.stringify(formData),
-    })
+    fetch(
+      `https://shopify-inventory-backend.herokuapp.com/products/${formData.id}`,
+      {
+        method: "DELETE",
+        // headers: {
+        //   "Content-Type": "application/json",
+        // },
+        // body: JSON.stringify(formData),
+      }
+    )
       .then((response) => response.json())
       .then((json) => {
         alert(json.message);
