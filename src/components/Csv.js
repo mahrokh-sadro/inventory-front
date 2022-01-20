@@ -14,7 +14,7 @@ const Csv = () => {
         </Link>
 
         <Link to="/update" class="btn btn-primary" type="submit">
-          Edit the quantity of an Item
+          Edit the name of an Item
         </Link>
 
         <Link to="/delete" class="btn btn-primary" type="submit">
