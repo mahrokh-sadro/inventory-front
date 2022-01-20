@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 const UpdatePage = () => {
   const [formData, setFormData] = useState({
-    id: "",
-    name: "",
+    // id: "",
+    // name: "",
   });
 
   const [product, setProduct] = useState({
